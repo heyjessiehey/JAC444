@@ -4,19 +4,22 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
 - [x] Workshop 1
    -  Basic concepts such as encapsulation and abstraction.
    -  First, develop a Stack class. Second, develop a second Java class named Palindrome that in its main method, receives a string as a command-line argument, and then uses a Stack object to check whether the given string is a palindrome or not.
-- [x] Workshop 2
+- [x] Workshop 2 - Task 1
+- [x] Workshop 3 - Task 2 and 3
    -  Basic concepts such as encapsulation and abstraction, inheritance, polymorphism, and exceptions.
-   -  Develop Circle, Square, Rectangle, Parallelogram, and Triangle Class.
-   -  Task 1
-- [x] Workshop 3
-   -  Task 2 and Task 3
+   -  Task 1: develop Circle, Square, Rectangle, Parallelogram, and Triangle Class and calculate perimeters of all shpaes
+   -  Task 2: get min perimeter of triangle and max perimeter of circle and delete them from the shpaes
+   -  Task 3: calculate and print the total perimeter of all parallelograms and the total of all trianlges
 - [x] Workshop 4
    -  Object Serialization using console
 - [ ] Workshop 5
    -  Object Serialization using GUI - Swing
 - [x] Workshop 6
-   - Part1 Implement Knight's Tour manually GUI - Swing
-- [ ] Workshop 7
+   -  Part1 Implement Knight's Tour manually GUI - Swing
+- [x] Workshop 7
+   -  Functional Interface and Lambda Expression
+   -  Based on Workshop 2, added Task 4
+   -  Task 4: calculate areas of Circle, Square, and Rectangle 
 - [ ] Workshop 8
 - [ ] Workshop 9 
 - [ ] Workshop 10
