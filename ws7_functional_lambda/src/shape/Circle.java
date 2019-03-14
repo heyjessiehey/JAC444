@@ -1,7 +1,8 @@
 package shape;
 
+
 public class Circle implements Shape{
-	
+
 	private double radius;
 	private Area area;
 	
@@ -39,7 +40,7 @@ public class Circle implements Shape{
 	@Override
 	public String toString(){
 		return "Circle {r=" + getRadius() + "}" + " perimeter = " + perimeter()
-				+ " area = " + area.getArea(getRadius(), getRadius());
+				+ " area = " + area.calArea(getRadius(), getRadius()); // defined calArea method by lambda
 	}
 
 }

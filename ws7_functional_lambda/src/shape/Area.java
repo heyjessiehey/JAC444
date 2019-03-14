@@ -1,5 +1,5 @@
 package shape;
 @FunctionalInterface
 public interface Area {
-    double getArea(double x, double y);
+    double calArea(double x, double y);
 }

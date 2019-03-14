@@ -6,6 +6,7 @@ package main;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.*;
 
 import shape.Circle;
 import shape.CircleException;
@@ -27,8 +28,9 @@ public class Main {
 	 * @throws CircleException, ParallelogramException, TriangleException 
 	 */
 	public static void main(String[] args) {
-		Shape[] arrayOfShapes = new Shape[50]; // array to contain all the shapes 
-		int index = 0;
+		//Shape[] arrayOfShapes = new Shape[50]; // array to contain all the shapes
+		List<Shape> shapeList = new LinkedList<>(); //
+		int counter = 0;
 		
 		System.out.println("------->JAC 444 <--------");
 		System.out.println("------->Task 4 ... <--------");
@@ -41,8 +43,8 @@ public class Main {
 					if(tokens[0].equals("Circle") && tokens.length == 2){  //compare contents and proper number of tokens
 						try{
 							double value = Double.parseDouble(tokens[1]); // convert string to double
-							arrayOfShapes[index] = new Circle(value); // create Circle object
-							index++;
+							shapeList.add(new Circle(value)); // create Circle object
+							counter++;
 						}catch(CircleException e){
 							System.out.println(e.getMessage());
 						}
@@ -51,8 +53,8 @@ public class Main {
 							double value1 = Double.parseDouble(tokens[1]);
 							double value2 = Double.parseDouble(tokens[2]);
 							double value3 = Double.parseDouble(tokens[3]);
-							arrayOfShapes[index] = new Triangle(value1, value2, value3); //create Triangle object
-							index++;
+							shapeList.add(new Triangle(value1, value2, value3)); //create Triangle object
+							counter++;
 						}catch(TriangleException e){
 							System.out.println(e.getMessage());
 						}
@@ -60,8 +62,8 @@ public class Main {
 						try{
 							double value1 = Double.parseDouble(tokens[1]);
 							double value2 = Double.parseDouble(tokens[2]);
-							arrayOfShapes[index] = new Parallelogram(value1, value2); // create Parallelogram object
-							index++;
+							shapeList.add(new Parallelogram(value1, value2)); // create Parallelogram object
+							counter++;
 						}catch(ParallelogramException e){
 							System.out.println(e.getMessage());
 						}
@@ -69,16 +71,16 @@ public class Main {
 						try{
 							double value1 = Double.parseDouble(tokens[1]);
 							double value2 = Double.parseDouble(tokens[2]);
-							arrayOfShapes[index] = new Rectangle(value1, value2); // create Rectangle object
-							index++;
+							shapeList.add(new Rectangle(value1, value2)); // create Rectangle object
+							counter++;
 						}catch(ParallelogramException e){ // use superclass custom exception handler
 							System.out.println(e.getMessage());
 						}
 					}else if(tokens[0].equals("Square") && tokens.length == 2){
 						try{
 							double value = Double.parseDouble(tokens[1]);
-							arrayOfShapes[index] = new Square(value); // create Square object
-							index++;
+							shapeList.add(new Square(value)); // create Square object
+							counter++;
 						} catch(ParallelogramException e){ // use superclass custom exception handler
 							System.out.println(e.getMessage());
 						}
@@ -91,9 +93,9 @@ public class Main {
 			System.out.println(e.getMessage());
 		} finally { // must execute 
 			System.out.println(); // print blank line 
-			System.out.println(index + " shapes were created:");
+			System.out.println(counter + " shapes were created:");
 		
-			for(Shape shape : arrayOfShapes){ // use for each loop print Shape array elements
+			for(Shape shape : shapeList){ // use for each loop print Shape array elements
 				if(shape == null)
 					break;
 				System.out.println(shape);

@@ -10,7 +10,7 @@ package shape;
 public class Parallelogram implements Shape{
 	private double width;
 	private double height;
-	private Area area;
+	private Area area; // functional interface
 	
 	//2 arguments constructor
 	public Parallelogram(double width, double height) throws ParallelogramException{
@@ -28,7 +28,7 @@ public class Parallelogram implements Shape{
 	public double getHeight(){
 		return height;
 	}
-	public Area getarea() { return area;}
+	public Area getArea() { return area;}
 	//setters
 	public void setWidth(double width) throws ParallelogramException{
 		if(width > 0){
