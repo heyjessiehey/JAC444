@@ -4,13 +4,13 @@ package shape;
 public class Circle implements Shape{
 
 	private double radius;
-	private Area area;
+	private Area area = (r1, r2) -> Math.PI * r1 * r2;
 	
 	//one argument constructor 
 	public Circle(double radius) throws CircleException{
 		if(radius > 0) { //check the value is not negative or zero
 			this.radius = radius;
-			this.area = (r1, r2) -> Math.PI * r1 * r2; // create an obj of Area interface using lambda expression
+			//this.area = (r1, r2) -> Math.PI * r1 * r2; // create an obj of Area interface using lambda expression
 		}
 		else // throw custom exception
 			throw new CircleException("Invalid radius!");
@@ -36,7 +36,7 @@ public class Circle implements Shape{
 	public double perimeter() {
 		return 2 * Math.PI * getRadius(); //calculate circle
 	}
-	
+
 	@Override
 	public String toString(){
 		return "Circle {r=" + getRadius() + "}" + " perimeter = " + perimeter()

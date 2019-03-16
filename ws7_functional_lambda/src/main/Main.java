@@ -29,7 +29,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		//Shape[] arrayOfShapes = new Shape[50]; // array to contain all the shapes
-		List<Shape> shapeList = new LinkedList<>(); //
+		List<Shape> shapeList = new LinkedList<>();
 		int counter = 0;
 		
 		System.out.println("------->JAC 444 <--------");
@@ -48,7 +48,7 @@ public class Main {
 						}catch(CircleException e){
 							System.out.println(e.getMessage());
 						}
-					}/*else if(tokens[0].equals("Triangle") && tokens.length == 4){
+					}else if(tokens[0].equals("Triangle") && tokens.length == 4){
 						try{
 							double value1 = Double.parseDouble(tokens[1]);
 							double value2 = Double.parseDouble(tokens[2]);
@@ -67,7 +67,7 @@ public class Main {
 						}catch(ParallelogramException e){
 							System.out.println(e.getMessage());
 						}
-					}*/else if(tokens[0].equals("Rectangle") && tokens.length == 3){
+					}else if(tokens[0].equals("Rectangle") && tokens.length == 3){
 						try{
 							double value1 = Double.parseDouble(tokens[1]);
 							double value2 = Double.parseDouble(tokens[2]);

@@ -10,14 +10,13 @@ package shape;
 public class Parallelogram implements Shape{
 	private double width;
 	private double height;
-	private Area area; // functional interface
+
 	
 	//2 arguments constructor
 	public Parallelogram(double width, double height) throws ParallelogramException{
 		if(width > 0 && height > 0){ //check the values are not negative or zero
 			this.width = width;
 			this.height = height;
-			this.area = (w, h) -> w * h; // create an obj of Area interface using lambda expression
 		}else // throw exception
 			throw new ParallelogramException("Invalid side!"); 
 	}
@@ -28,7 +27,6 @@ public class Parallelogram implements Shape{
 	public double getHeight(){
 		return height;
 	}
-	public Area getArea() { return area;}
 	//setters
 	public void setWidth(double width) throws ParallelogramException{
 		if(width > 0){

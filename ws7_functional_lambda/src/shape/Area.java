@@ -1,5 +1,5 @@
 package shape;
 @FunctionalInterface
-public interface Area {
-    double calArea(double x, double y);
+public interface Area { //ShpaeProperty name is better
+    double calArea(double x, double y); //... d
 }
