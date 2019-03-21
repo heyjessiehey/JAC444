@@ -13,7 +13,7 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
 - [x] Workshop 4
    -  Object Serialization using console
 - [x] ~~Workshop 5~~
-   -  ~~Object Serialization using GUI - Swing
+   -  ~~Object Serialization using GUI - Swing~~
 - [x] Workshop 6
    -  Part1 Implement Knight's Tour manually GUI - Swing
 - [x] Workshop 7
