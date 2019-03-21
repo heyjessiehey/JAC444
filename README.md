@@ -25,3 +25,4 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
    - Generics, Functional Interfaces, Lambda Expressions, Method References, Streas, and Collections
 - [ ] Workshop 9 
 - [ ] Workshop 10
+- [ ] Workshop 11
