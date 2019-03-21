@@ -20,6 +20,8 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
    -  Functional Interface and Lambda Expression
    -  Based on Workshop 2, added Task 4
    -  Task 4: calculate areas of Circle, Square, and Rectangle 
-- [ ] Workshop 8
+- [x] Workshop 8
+   - Functional programming
+   - Generics, Functional Interfaces, Lambda Expressions, Method References, Streas, and Collections
 - [ ] Workshop 9 
 - [ ] Workshop 10
