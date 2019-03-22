@@ -4,7 +4,7 @@ package shape;
 public class Circle implements Shape{
 
 	private double radius;
-	private Area area = (r1, r2) -> Math.PI * r1 * r2;
+	private ShapeProperty property = () -> Math.PI * getRadius() * getRadius();
 	
 	//one argument constructor 
 	public Circle(double radius) throws CircleException{
@@ -40,7 +40,7 @@ public class Circle implements Shape{
 	@Override
 	public String toString(){
 		return "Circle {r=" + getRadius() + "}" + " perimeter = " + perimeter()
-				+ " area = " + area.calArea(getRadius(), getRadius()); // defined calArea method by lambda
+				+ " area = " + property.getProperty();
 	}
 
 }

@@ -31,7 +31,7 @@ public class StudnetProcess {
         list.stream()
                 .filter(l -> l.getGrade() >= 50.0 && l.getGrade() <= 100.0) // lambda
                 .sorted(Comparator.comparing(Student::getGrade))
-                .collect(Collectors.toList())
+                //.collect(Collectors.toList())
                 .forEach(System.out::println); System.out.println();
 
         System.out.println("Task 3: ");
@@ -60,12 +60,7 @@ public class StudnetProcess {
                 .map(Student::getLastName)
                 .distinct()
                 .sorted()
-                .collect(Collectors.toList())
+                //.collect(Collectors.toList())
                 .forEach(System.out::println);
-
-
-
-
-
     }
 }

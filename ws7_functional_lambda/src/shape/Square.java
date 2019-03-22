@@ -15,6 +15,6 @@ public class Square extends Rectangle{ // subclass
 	@Override
 	public String toString(){ // return string
 		return "Square {s=" + super.getHeight() + "}" +
-				" perimeter = " + perimeter() + " area = " + getArea().calArea(getWidth(), getHeight()); // defined calArea method by lambda
+				" perimeter = " + perimeter() + " area = " + getArea().getProperty(); // defined calArea method by lambda
 	}
 }
