@@ -23,6 +23,8 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
 - [x] Workshop 8
    - Functional programming
    - Generics, Functional Interfaces, Lambda Expressions, Method References, Streams, and Collections
-- [ ] Workshop 9 
+- [x] Workshop 9 
+   - Multi-Threaded programming
+   - Threads, Guarded Blocks, and Synchronization
 - [ ] Workshop 10
 - [ ] Workshop 11
