@@ -12,8 +12,9 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
    -  Task 3: calculate and print the total perimeter of all parallelograms and the total of all trianlges
 - [x] Workshop 4
    -  Object Serialization using console
-- [x] ~~Workshop 5~~
-   -  ~~Object Serialization using GUI - Swing~~
+- [x] Workshop 5
+   -  Based on ws4
+   -  Object Serialization using GUI - Swing
 - [x] Workshop 6
    -  Part1 Implement Knight's Tour manually GUI - Swing
 - [x] Workshop 7
@@ -26,5 +27,6 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
 - [x] Workshop 9 
    - Multi-Threaded programming
    - Threads, Guarded Blocks, and Synchronization
-- [ ] Workshop 10
+- [x] Workshop 10
+   - RMI
 - [ ] Workshop 11
