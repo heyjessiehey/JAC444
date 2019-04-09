@@ -29,4 +29,5 @@ Java is a widely-used, class-based, object-oriented programming environment. Its
    - Threads, Guarded Blocks, and Synchronization
 - [x] Workshop 10
    - RMI
-- [ ] Workshop 11
+- [x] Workshop 11
+   - the basics of JAVA Database Connectivity in Java and includes concepts such as Swing GUI, SQL and JDBC
